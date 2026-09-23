@@ -1,0 +1,231 @@
+<!doctype html>
+<!--
+  Drop this file at the root of a public repo (e.g. moviecollector-privacy),
+  then Settings -> Pages -> deploy from main.
+  Source of truth: PRIVACY.md in the moviedb_app repo - keep both in sync.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy &mdash; MovieCollector</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --muted: #5c5c5c;
+    --rule: #e2e2e2;
+    --link: #1a53b0;
+    --card: #f6f7f9;
+    --todo-bg: #ffe8a3;
+    --todo-fg: #5c4400;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171a;
+      --fg: #e8e8e8;
+      --muted: #a2a8b0;
+      --rule: #2c3036;
+      --link: #7fb0ff;
+      --card: #1d2025;
+      --todo-bg: #6b5200;
+      --todo-fg: #ffe9ab;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 44rem; margin: 0 auto; }
+  h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 1rem; }
+  h2 {
+    font-size: 1.2rem;
+    margin: 2.5rem 0 .75rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+  }
+  p, li { margin: 0 0 .85rem; }
+  ul { padding-left: 1.25rem; }
+  a { color: var(--link); }
+  a:hover { text-decoration: none; }
+  .meta {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    padding: .9rem 1.1rem;
+    margin: 0 0 1.75rem;
+    font-size: .95rem;
+  }
+  .meta div + div { margin-top: .3rem; }
+  .meta strong { color: var(--muted); font-weight: 600; }
+  .todo {
+    background: var(--todo-bg);
+    color: var(--todo-fg);
+    padding: .1rem .4rem;
+    border-radius: 4px;
+    font-weight: 700;
+  }
+  .table-wrap { overflow-x: auto; margin: 0 0 1rem; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td {
+    text-align: left;
+    padding: .55rem .7rem;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  th { font-weight: 600; white-space: nowrap; }
+  td a { word-break: break-word; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Privacy Policy for MovieCollector</h1>
+
+<div class="meta">
+  <div><strong>Last updated:</strong> 23 September 2026</div>
+  <div><strong>Developer:</strong> Draghain</div>
+  <div><strong>Contact:</strong> <a href="mailto:k.roumans+developer@gmail.com">k.roumans+developer@gmail.com</a></div>
+</div>
+
+<p>MovieCollector is an Android app for cataloguing a personal physical movie
+collection. This policy explains what the app does with data.</p>
+
+<h2>Summary</h2>
+
+<p>Your collection stays on your device. There is no account, and no server
+operated by the developer. The developer cannot see your collection. The app
+does send barcodes and film titles to third-party lookup services, and shows
+ads, both described below.</p>
+
+<h2>Data stored on your device</h2>
+
+<p>The app stores the following locally, in its private app storage:</p>
+
+<ul>
+  <li>Films you add: barcode, title, year, genres, cast, director, runtime, age
+      rating, overview, poster, your rating, notes, tags, watched status and
+      date, favourite flag, loan details (borrower name and date) and any photo
+      you take.</li>
+  <li>App settings, including UI language, metadata language, theme and any API
+      keys you enter. Keys are held in Android's encrypted storage.</li>
+</ul>
+
+<p>This data is not transmitted to the developer. It is removed when you
+uninstall the app or clear its data. It may be included in
+<strong>Android Auto Backup</strong>, a Google operating-system feature that
+copies app data to your own Google account.</p>
+
+<h2>Data sent to third parties</h2>
+
+<p><strong>Film lookup.</strong> When you scan a barcode or search for a title,
+that barcode or title is sent to the services below so the app can identify the
+film. No other information about you is included.</p>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>Service</th><th>Purpose</th><th>Policy</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>UPCitemdb</td><td>Barcode lookup</td>
+      <td><a href="https://www.upcitemdb.com/wp/docs/main/privacy-policy/">upcitemdb.com</a></td></tr>
+    <tr><td>Go-UPC</td><td>Barcode lookup (optional)</td>
+      <td><a href="https://go-upc.com/privacy">go-upc.com</a></td></tr>
+    <tr><td>Open Food Facts</td><td>Barcode lookup</td>
+      <td><a href="https://world.openfoodfacts.org/privacy">openfoodfacts.org</a></td></tr>
+    <tr><td>TMDB</td><td>Film metadata and posters</td>
+      <td><a href="https://www.themoviedb.org/privacy-policy">themoviedb.org</a></td></tr>
+    <tr><td>OMDb</td><td>Film metadata (optional)</td>
+      <td><a href="https://www.omdbapi.com/">omdbapi.com</a></td></tr>
+  </tbody>
+</table>
+</div>
+
+<p><strong>Advertising.</strong> The app shows a banner advert supplied by
+<strong>Google AdMob</strong>. AdMob may collect and process data including your
+device's advertising ID, IP address and general device information in order to
+serve and measure ads. This processing is carried out by Google, not by the
+developer, and is governed by Google's policies:</p>
+
+<ul>
+  <li><a href="https://policies.google.com/technologies/partner-sites">How Google
+      uses information from partner apps</a></li>
+  <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+</ul>
+
+<p>If you are in the European Economic Area, the United Kingdom or Switzerland,
+the app asks for your advertising consent choices before requesting ads, and
+passes those choices to Google. You can change them at any time from the app's
+privacy options. You can also reset or delete your advertising ID in Android's
+settings (Settings &rarr; Privacy &rarr; Ads).</p>
+
+<p><strong>Google Drive backup (optional, off by default).</strong> If you
+enable cloud backup, you sign in with Google and the app writes a backup of your
+collection to <em>your own</em> Google Drive. The app uses the restricted
+<code>drive.file</code> scope, which grants access only to files this app itself
+creates. It cannot read anything else in your Drive, and the developer has no
+access to your Drive or to the backup. Turn the feature off and delete the
+backup file to stop this.</p>
+
+<h2>Permissions</h2>
+
+<ul>
+  <li><strong>Camera</strong> &mdash; used only to scan barcodes and to take a
+      photo of a disc if you choose to. Camera images are processed on your
+      device; the app does not upload them.</li>
+  <li><strong>Photos / media</strong> &mdash; only if you pick an existing image
+      for a film.</li>
+  <li><strong>Internet</strong> &mdash; film lookup, poster downloads, ads and
+      Drive backup.</li>
+</ul>
+
+<h2>Analytics</h2>
+
+<p>The app contains no analytics or crash-reporting SDK. The developer receives
+no usage statistics.</p>
+
+<h2>Children</h2>
+
+<p>MovieCollector is not directed at children and is not intended for users
+under 13. The developer does not knowingly collect data from children.</p>
+
+<h2>Your rights</h2>
+
+<p>Because the developer holds no personal data about you, there is no
+developer-held record to access, correct or delete. To remove everything the app
+has stored, uninstall it or clear its data. For data held by Google
+(advertising, Drive, Android Backup), use your Google account controls at
+<a href="https://myaccount.google.com">myaccount.google.com</a>.</p>
+
+<p>Under the GDPR, ad personalisation is based on your consent, which you can
+withdraw at any time through the app's privacy options.</p>
+
+<h2>Changes</h2>
+
+<p>This policy may be updated. Material changes will be reflected by a new
+&ldquo;last updated&rdquo; date, and the current version is always available at
+this address.</p>
+
+<h2>Contact</h2>
+
+<p><a href="mailto:k.roumans+developer@gmail.com">k.roumans+developer@gmail.com</a></p>
+
+<footer>MovieCollector &mdash; privacy policy</footer>
+
+</main>
+</body>
+</html>
